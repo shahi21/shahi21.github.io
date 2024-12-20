@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e3f2fd;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #2196f3, #90caf9);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 400px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1976d2;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+#location {
+  padding: 12px;
+  width: 250px;
+  border: 2px solid #1976d2;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#location:focus {
+  outline: none;
+  border-color: #42a5f5;
+  box-shadow: 0 0 8px rgba(66, 165, 245, 0.6);
+}
+
+#search-btn {
+  padding: 12px 20px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#search-btn:hover {
+  background-color: #42a5f5;
+  box-shadow: 0 4px 10px rgba(66, 165, 245, 0.5);
+}
+
+.weather-info {
+  margin-top: 20px;
+  animation: fadeIn 1s ease;
+}
+
+#weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+#forecast {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.forecast-day {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100px;
+  animation: fadeIn 1.2s ease;
+}
+
+.forecast-day h3 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.forecast-day p {
+  font-size: 1.2rem;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.forecast-day img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #location {
+    width: 200px;
+  }
+
+  #search-btn {
+    padding: 10px 15px;
+  }
+
+  .forecast-day {
+    width: 90px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
