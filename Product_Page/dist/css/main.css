@@ -1,60 +1,93 @@
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.hero-content {
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-.hero {
-  position: relative;
+.header {
+  background-color: #3498db;
+  color: white;
   text-align: center;
-  color: #fff;
+  padding: 2rem 0;
 }
-.hero img {
-  width: 100%;
-  height: auto;
-}
-.hero .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  border-radius: 8px;
-}
-.hero .hero-content h1 {
+.header h1 {
+  margin: 0;
   font-size: 2.5rem;
 }
-.hero .hero-content p {
-  font-size: 1.2rem;
-}
-.hero .hero-content a {
-  margin-top: 10px;
+.header p {
+  margin: 0.5rem 0 0;
 }
 
-.features h2 {
-  color: #1a446e;
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
 }
-.features p {
-  color: #333;
+.features .feature {
+  text-align: center;
+  flex: 1;
+  margin: 0 1rem;
+}
+.features .feature img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+.features .feature h2 {
+  margin: 1rem 0 0.5rem;
 }
 
 .cta {
-  background-color: #000000;
-  color: #fff;
+  text-align: center;
+  background-color: #3498db;
+  color: white;
+  padding: 1.5rem 0;
 }
 .cta h2 {
-  margin-bottom: 20px;
+  margin: 0;
 }
-.cta a {
-  padding: 10px 20px;
-  font-size: 1.2rem;
+.cta button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.cta button:hover {
+  background-color: #5faee3;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #f8f8f8;
+}
+.footer p {
+  margin: 0;
+  color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .features .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta button {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

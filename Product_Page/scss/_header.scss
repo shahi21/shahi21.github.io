@@ -1,32 +1,15 @@
-.hero {
-    position: relative;
+.header {
+    background-color: $primary-color;
+    color: white;
     text-align: center;
-    color: #fff;
+    padding: 2rem 0;
 
-    img {
-        width: 100%;
-        height: auto;
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
     }
 
-    .hero-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 40px;
-        border-radius: 8px;
-
-        h1 {
-            font-size: 2.5rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-        }
-
-        a {
-            margin-top: 10px;
-        }
+    p {
+        margin: 0.5rem 0 0;
     }
 }

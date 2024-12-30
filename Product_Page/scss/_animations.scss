@@ -1,7 +1,22 @@
+// @keyframes fadeIn {
+//     0% { opacity: 0; transform: translateY(20px); }
+//     100% { opacity: 1; transform: translateY(0); }
+// }
+// .hero-content {
+//     animation: fadeIn 1.5s ease-in-out;
+// }
+
+
+/* Example Animation */
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-.hero-content {
-    animation: fadeIn 1.5s ease-in-out;
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
 }
