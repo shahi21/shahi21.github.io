@@ -1,0 +1,576 @@
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+}
+
+.navbar-nav{
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    padding-left: 200px;
+
+}
+
+.navbar-brand img{
+    max-height: 50px;
+    
+}
+
+.navbar-nav .nav-link{
+    font-size: 18px;
+    margin-right: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #17a2b8 !important;
+}
+
+
+
+
+/* style for industry somethng */
+.industry-solutions .card-link {
+    text-decoration: none; 
+   
+}
+
+.industry-solutions .card{
+    transition: 0.3s;
+    
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 0px;
+}
+
+.industry-solutions{
+    padding: 60px 0;
+    background-color: #f6f6f6;
+    text-align: center;
+
+}
+.industry-solutions a{
+    text-decoration: none;
+}
+.industry-solutions .carousel-control-prev{
+    left: -90px;
+}
+.industry-solutions .carousel-control-next{
+    right: -90px;
+}
+
+
+
+
+/* end of style for industry */
+
+
+
+
+/* css for center of excellence */
+
+.center-excellence {
+    padding: 60px 0;
+    background-color: #f8f9faad;
+    text-align: center;
+}
+
+.coe-card {
+    text-decoration: none;
+ 
+}
+
+.coe-card .card {
+    border: none;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 0%;
+}
+
+.coe-card .card:hover {
+    transform: translateY(-10px);
+    
+}
+
+.coe-card .card-body {
+    padding: 50px;
+}
+
+.coe-card .card-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.coe-card .card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.coe-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.3s ease-in-out ;
+}
+
+.coe-card img:hover{
+    transform: scale(1.1) ;
+}
+/* end of style for center of excellence */
+
+
+
+
+/* style for section after center of execllence */
+.carousel-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-image img {
+    max-width: 300px; /* Adjust image width as needed */
+    height: auto;
+}
+
+.carousel-text {
+    flex: 2;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); 
+    
+}
+/* Move previous arrow further left */
+.carousel-control-prev {
+    left: -90px; /* Adjust this value as needed */
+}
+
+/* Move next arrow further right */
+.carousel-control-next {
+    right: -80px; /* Adjust this value as needed */
+}
+
+@media (max-width: 768px) {
+    .carousel-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .carousel-image img {
+        max-width: 100%;
+    }
+}
+
+
+/* end of style for section after center of execllence */
+
+
+
+/* unique human approach style */
+.unique-human-approach {
+    background: url('/assets/human-approach-bg-1.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.unique-human-approach h2 {
+    font-weight: bold;
+}
+
+.unique-human-approach .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.unique-human-approach .card {
+    width: 250px;
+    text-align: center;
+    background: white;
+    border-radius: 0;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out ;
+}
+
+.unique-human-approach .card:hover {
+    transform: scale(1.05);
+}
+
+.unique-human-approach .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+
+.unique-human-approach .card:nth-child(1) { border: 8px solid #C1C1C1;  margin-top: 90px;} 
+.unique-human-approach .card:nth-child(2) { border: 8px solid #5B9BD5; margin-bottom: 90px;} 
+.unique-human-approach .card:nth-child(3) { border: 8px solid #B7E1CD; margin-top: 90px; } 
+.unique-human-approach .card:nth-child(4) { border: 8px solid #76EEC6; margin-bottom: 90px;} 
+
+.unique-human-approach .card-text {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+    .card-container {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* customer success stories style */
+
+
+
+.customer-success-stories {
+    padding: 60px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+.customer-success-stories h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.customer-success-stories .top-heading {
+    color: black;
+}
+.customer-success-stories p {
+    font-size: 1rem;
+    color: #f4f0f0;
+    margin-bottom: 20px;
+}
+
+.customer-success-stories .view-all {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(14, 14, 14);
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+/* Cards Layout */
+.customer-success-stories .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Card Styling */
+.customer-success-stories .card {
+    width: 32%;
+    background: #1E3A5F;
+    color: white;
+    border-radius: 0;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.customer-success-stories .card:hover {
+    transform: translateY(-5px);
+}
+
+.customer-success-stories .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.customer-success-stories .card img:hover{
+    transform: scale(1.1);
+}
+
+.customer-success-stories .card-content {
+    padding: 20px;
+}
+
+.customer-success-stories .card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.customer-success-stories .card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+
+/* learn more */
+.customer-success-stories .card a {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+    .customer-success-stories .card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .customer-success-stories .card {
+        width: 100%;
+    }
+}
+
+
+/* styles for technollgy partners */
+.technology-partners{
+    background-color: rgb(232, 231, 231);
+    padding-top: 10px;
+    padding-bottom: 90px;
+}
+
+.technology-partners .fixed-img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+.technology-partners .carousel-item .row {
+    justify-content: center;
+}
+
+
+.technology-partners  .carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+
+
+/* outcome section */
+.outcome-section {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.outcome-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.outcome-section  .text-section {
+    max-width: 40%;
+}
+
+.outcome-section  .text-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.outcome-section  .text-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.outcome-section  .stats {
+    position: relative;
+    max-width: 50%;
+}
+
+.outcome-section  .stat-box {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.outcome-section  .blue {
+    background-color: #cce7ff;
+    color: #0077b6;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.outcome-section  .white {
+    background-color: #ffffff;
+    color: #00838f;
+    position: absolute;
+    left: 30px;
+    top: 90px;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.outcome-section  .green {
+    background-color: #bfe6dc;
+    color: #4a4a4a;
+    margin-top: 80px;
+    border-radius: 0;
+    
+}
+
+
+/* style for award section */
+.award-section {
+    background-color: #EAEAEA;
+    
+    margin-bottom: 30px;
+    
+    
+}
+h2.award-title{
+    text-align:left;
+position: relative;
+   top: 90px;
+
+
+}
+
+
+
+
+.award-section .award-carousel-container {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+
+    max-width: 50%;
+    margin: auto;
+    padding-top: 4% ;
+    padding-bottom: 90px;
+    
+}
+
+.award-section .carousel-inner img {
+    max-width: 90%;
+    height: 80%;
+}
+
+.award-section .custom-control {
+    background-color: #007bff;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.award-section .custom-control span {
+    filter: invert(1);
+}
+
+.award-section .carousel-control-prev {
+    left: -80px;
+}
+
+.award-section .carousel-control-next {
+    right: -80px;
+}
+
+
+
+/* styles for footer section */
+.footer-section {
+    background-color: #f8f9fa; 
+    padding: 40px 0 ;
+
+}
+
+.footer-headings a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footer-headings a:hover{
+    color: #007bff;
+}
+
+.footer-logo {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #0e0e0e;
+    text-decoration: none;
+ 
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+
+/* end footer */
+.copyright-footer {
+    background-color: #0073cf; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.copyright-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons .icon img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons .icon img:hover {
+    transform: scale(1.1);
+}
+
+
+
