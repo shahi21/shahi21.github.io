@@ -1,0 +1,53 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    background: rgb(221, 219, 218);
+    color: rgb(22, 22, 22);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+ 
+}
+
+.container{
+background: white;
+width: 500px;
+padding: 20px;
+border-radius: 20px;
+text-align: center;
+}
+
+textarea{
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed rgb(14, 15, 15);
+}
+
+select,button{
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+}
+button{
+    background: rgb(12, 193, 12);
+    color: white;
+    font-weight: bold;
+}
+
+button:hover{
+    background: rgb(5, 136, 5);
+}
+
+#stop-btn{
+    background: #dc3545;
+}
+
+#stop-btn:hover{
+    background: #b02a37;
+}
